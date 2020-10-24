@@ -1,0 +1,29 @@
+{{ define "main" }}
+    <main class="wrapper">
+        {{ $counter := 0 }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post" ) }}
+        {{ range $paginator.Pages }}
+        {{ $counter = add $counter 1 }}
+        <div class="item item-{{$counter }}">
+        <a href="{{ .Permalink }}" class="card">
+            <div 
+            class="thumb" 
+            style="background-image: url('{{.Params.featuredimage}}')">
+            </div>
+            <article>
+                <h2>{{ .Title}}</h2>
+                <time datetime="{{ .Date.Format "2006-01-01" }}">
+                    {{ .Date.Format "January 2 2006" }}
+                </time>
+                <div>
+                <span>{{ .Description }}</span>
+            </div>
+            </article>
+        </a>
+        </div>
+        {{ end }}
+        <section class="headsup">
+            {{ template "_internal/pagination.html" . }}
+        </section>
+    </main>
+{{ end }}

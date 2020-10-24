@@ -1,0 +1,30 @@
+{{ define "main"}}
+<main>
+    <article class="blog-post">
+        <section
+          class="hero"
+          style="
+            background-image: url({{.Params.featuredimage}});
+            height: 30vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <h1>{{ .Title }}</h1>
+        </section>
+        <section class="post">
+          <div>
+            <span>Posted on: {{ .Date.Format "January 2, 2006" }}</span>
+            <span>Reading Time: {{ .ReadingTime }}</span>
+          </div>
+            {{.Content}}
+        </section>
+        <aside>
+            <div class="content-table">
+                <h4>Table of contents</h4>
+                    {{ .TableOfContents }}
+            </div>
+        </aside>
+    </article>
+</main>
+{{ end }}

@@ -1,0 +1,34 @@
+{{ define "main" }}
+<main class="wrapper">
+    <section class="headsup">
+    <hgroup style="display: flex; flex-direction: column; align-items: center;">
+        <h1>{{ .Site.Title }}</h1>
+    </hgroup>
+        <h3>Recent Posts</h3>
+    </section>
+        {{ $counter := 0 }}
+        {{ range first 5 (where .Site.RegularPages.ByDate.Reverse "Type" "post")}}
+        {{ $counter = add $counter 1 }}
+        <div class="item item-{{$counter }}">
+            <a href="{{ .Permalink }}" class="card">
+            <div 
+            class="thumb" 
+            style="background-image: url('{{.Params.featuredimage}}')">
+            </div>
+            <article>
+                    <h2>{{ .Title }}</h2>
+                    <time datetime="{{ .Date.Format "2006-01-01" }}">
+                        {{ .Date.Format "January 2, 2006" }}
+                    </time>
+                    <div>
+                        <span>{{ .Description }}</span>
+                    </div>
+            </article>
+        </a>
+        </div>
+        {{ end }}
+        <section class="headsup">
+            <a href="/post" style="display:flex; flex-direction: column; text-align: end; padding: 1.5rem;">View all</a>
+        </section>
+</main>
+{{ end}}

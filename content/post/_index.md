@@ -1,0 +1,3 @@
+---
+title: All BLog posts
+---

@@ -1,0 +1,164 @@
+.wrapper {
+  width: 95%;
+  max-width: 1600px;
+  margin: 10px auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+
+  @media (min-width: 40em) {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+
+  @media (min-width: 60em) {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  // sets up hover state
+  // position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  article {
+    padding: 20px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+
+  p {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 2em 0 0 0;
+  }
+
+  .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.item-1 {
+  @media (min-width: 60em) {
+    grid-column: 1 / span 2;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+section.headsup {
+  @media (min-width: 40em) {
+    grid-column: 1 / span 2;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+section.headsup {
+  @media (min-width: 60em) {
+    grid-column: 1 / span 3;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+// OLd Main content layout
+
+// main {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//   grid-gap: 1.25rem;
+//   margin: 10px auto;
+//   // max-width: 1600px;
+//   width: 90%;
+// }
+
+// .item {
+//   min-height: 30vh;
+//   max-height: 70vh;
+//   background-color: lightgoldenrodyellow;
+// }
+
+// /* 3-col Layout: at mobile view */
+// @media (min-width: 840px) {
+//   main {
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-areas:
+//       "featured item-1 item-2"
+//       "featured item-1 item-2";
+//   }
+//   .item.featured {
+//     grid-area: featured;
+//   }
+
+//   .item-2 {
+//     grid-area: item-1;
+//   }
+
+//   .item-3 {
+//     grid-area: item-2;
+//   }
+// }
+// /* Featured Layout */
+// @media (min-width: 1200px) {
+//   main {
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-areas:
+//       "featured item-1 item-1"
+//       "featured item-2 item-2";
+//   }
+//   .item.featured {
+//     grid-area: featured;
+//   }
+
+//   .item-2 {
+//     grid-area: item-1;
+//   }
+
+//   .item-3 {
+//     grid-area: item-2;
+//   }
+// }
