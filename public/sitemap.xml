@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost/post/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/categories/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/css/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/html/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/markdown/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/post/post9/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/categories/syntax/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/themes/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/categories/themes/</loc>
+    <lastmod>2020-05-09T17:40:02+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/post/post8/</loc>
+    <lastmod>2020-05-09T17:28:03+05:30</lastmod>
+  </url>
+  
+</urlset>
