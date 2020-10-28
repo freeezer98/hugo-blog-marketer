@@ -4,7 +4,7 @@ description: "Where Ends Meet"
 copyright: "Copyright © 2020; All rights reserved"
 languageCode: "en-us"
 DefaultContentLanguage: "en"
-paginate: "5"
+# paginate: "5"
 # googleAnalytics: "UA-XXXX"
 # DisqusShortname: ""
 
